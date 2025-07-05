@@ -1,4 +1,5 @@
 import sqlite3
+from loguru import logger  # <-- It's imported here
 from mcp.server.fastmcp import FastMCP
 
 # create mcp server instance named demo
@@ -8,7 +9,8 @@ mcp = FastMCP("SQLToolServer")
 @mcp.tool()
 def query_data(sql: str) -> str:
     """Execute SQL safely"""
-
+    # This line uses loguru to print a timestamped, informative log
+    logger.info(f"Executing SQL query: {sql}")
     # connect to local db file. 
     conn = sqlite3.connect("./database.db")
     try:
