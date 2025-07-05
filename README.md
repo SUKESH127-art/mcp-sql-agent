@@ -39,12 +39,7 @@ cd mcp-sql-agent
 
 ## ▶️ Usage
 
-### 1. Activate the Virtual Environment
-
-Before running the agent, activate the environment in your terminal:```bash
-source .venv/bin/activate
-
-### 2. Run the Agent
+### 1. Run the Agent
 
 Start the main client script. It will automatically launch and manage the server process for you.
 
@@ -52,7 +47,7 @@ Start the main client script. It will automatically launch and manage the server
 python3 mcp_client.py
 ```
 
-### 3. Start Chatting!
+### 2. Start Chatting!
 
 Once running, you can interact with the agent. To exit at any time, press `Ctrl+C`.
 
